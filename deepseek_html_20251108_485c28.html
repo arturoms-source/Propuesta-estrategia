@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquema de Propuesta Estratégica - DF Servicios</title>
+    <style>
+        :root {
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+  --status-bg-opacity: 0.15;
+  --status-border-opacity: 0.25;
+
+  --color-success-rgb: 33, 128, 141;
+  --color-error-rgb: 192, 21, 47;
+  --color-warning-rgb: 168, 75, 47;
+  --color-info-rgb: 98, 108, 113;
+
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --letter-spacing-tight: -0.01em;
+
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+
+  --corporate-blue: #1e3a8a;
+  --corporate-blue-light: #3b82f6;
+  --corporate-gray: #64748b;
+  --corporate-red: #dc2626;
+  --corporate-red-light: #ef4444;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+    --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    --color-success-rgb: var(--color-teal-300-rgb);
+    --color-error-rgb: var(--color-red-400-rgb);
+    --color-warning-rgb: var(--color-orange-400-rgb);
+    --color-info-rgb: var(--color-gray-300-rgb);
+  }
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
+}
+
+html {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Custom styles for corporate presentation */
+.main-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  background: var(--corporate-blue);
+  color: white;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  padding: var(--space-24);
+  z-index: 100;
+}
+
+.sidebar-logo {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-32);
+  color: white;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-bottom: var(--space-8);
+}
+
+.nav-link {
+  display: block;
+  padding: var(--space-12) var(--space-16);
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  border-radius: var(--radius-base);
+  transition: all var(--duration-fast) var(--ease-standard);
+  font-size: var(--font-size-md);
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-weight: var(--font-weight-medium);
+}
+
+.content {
+  margin-left: 280px;
+  flex: 1;
+  background: var(--color-background);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--corporate-blue) 0%, var(--corporate-blue-light) 100%);
+  color: white;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 42px;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-20);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.hero-subtitle {
+  font-size: var(--font-size-xl);
+  opacity: 0.95;
+  max-width: 800px;
+  margin: 0 auto var(--space-32);
+  line-height: 1.6;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: var(--space-16) var(--space-32);
+  background: white;
+  color: var(--corporate-blue);
+  border-radius: var(--radius-base);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  transition: transform var(--duration-fast) var(--ease-standard);
+  font-size: var(--font-size-lg);
+}
+
+.hero-cta:hover {
+  transform: translateY(-2px);
+}
+
+.section {
+  padding: 60px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section-header {
+  margin-bottom: var(--space-32);
+}
+
+.section-title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--corporate-blue);
+  margin-bottom: var(--space-12);
+}
+
+.section-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-24);
+  margin-bottom: var(--space-32);
+}
+
+.metric-card {
+  background: var(--color-surface);
+  padding: var(--space-24);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.metric-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-8);
+}
+
+.metric-value {
+  font-size: 36px;
+  font-weight: var(--font-weight-bold);
+  color: var(--corporate-blue);
+  margin-bottom: var(--space-4);
+}
+
+.metric-value.critical {
+  color: var(--corporate-red);
+}
+
+.metric-description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.consequences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-24);
+}
+
+.consequence-card {
+  background: var(--color-surface);
+  padding: var(--space-24);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.consequence-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.consequence-card.critical {
+  border-left: 4px solid var(--corporate-red);
+}
+
+.consequence-card.high {
+  border-left: 4px solid var(--color-warning);
+}
+
+.severity-badge {
+  display: inline-block;
+  padding: var(--space-4) var(--space-12);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-16);
+}
+
+.severity-badge.critical {
+  background: rgba(220, 38, 38, 0.15);
+  color: var(--corporate-red);
+  border: 1px solid var(--corporate-red);
+}
+
+.severity-badge.high {
+  background: rgba(var(--color-warning-rgb), 0.15);
+  color: var(--color-warning);
+  border: 1px solid var(--color-warning);
+}
+
+.consequence-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-12);
+  color: var(--color-text);
+}
+
+.consequence-description {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.causes-list {
+  display: grid;
+  gap: var(--space-20);
+}
+
+.cause-item {
+  background: var(--color-surface);
+  padding: var(--space-24);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  display: flex;
+  gap: var(--space-20);
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.cause-item:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.cause-letter {
+  width: 48px;
+  height: 48px;
+  background: var(--corporate-blue);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  flex-shrink: 0;
+}
+
+.cause-content {
+  flex: 1;
+}
+
+.cause-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-8);
+  color: var(--color-text);
+}
+
+.cause-description {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.recommendations-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+}
+
+.timeline-group {
+  background: var(--color-surface);
+  padding: var(--space-24);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  margin-bottom: var(--space-20);
+}
+
+.timeline-badge {
+  padding: var(--space-6) var(--space-16);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+}
+
+.timeline-badge.immediate {
+  background: rgba(220, 38, 38, 0.15);
+  color: var(--corporate-red);
+  border: 1px solid var(--corporate-red);
+}
+
+.timeline-badge.medium {
+  background: rgba(var(--color-warning-rgb), 0.15);
+  color: var(--color-warning);
+  border: 1px solid var(--color-warning);
+}
+
+.timeline-badge.long {
+  background: rgba(var(--color-success-rgb), 0.15);
+  color: var(--color-success);
+  border: 1px solid var(--color-success);
+}
+
+.timeline-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+}
+
+.recommendation-item {
+  padding: var(--space-20);
+  background: var(--color-background);
+  border-radius: var(--radius-base);
+  margin-bottom: var(--space-16);
+  border-left: 3px solid var(--corporate-blue);
+}
+
+.recommendation-item:last-child {
+  margin-bottom: 0;
+}
+
+.recommendation-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-12);
+  margin-bottom: var(--space-12);
+}
+
+.recommendation-number {
+  width: 32px;
+  height: 32px;
+  background: var(--corporate-blue);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-bold);
+  flex-shrink: 0;
+}
+
+.recommendation-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  flex: 1;
+}
+
+.recommendation-timeline {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
+.recommendation-description {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-left: 44px;
+}
+
+.chart-container {
+  background: var(--color-surface);
+  padding: var(--space-24);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  margin-bottom: var(--space-24);
+}
+
+.chart-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-16);
+  color: var(--color-text);
+}
+
+.chart-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-base);
+}
+
+.cta-section {
+  background: linear-gradient(135deg, var(--corporate-blue) 0%, var(--corporate-blue-light) 100%);
+  color: white;
+  padding: 60px;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-20);
+}
+
+.cta-description {
+  font-size: var(--font-size-lg);
+  opacity: 0.95;
+  margin-bottom: var(--space-32);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-actions {
+  display: flex;
+  gap: var(--space-16);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: var(--space-16) var(--space-32);
+  border-radius: var(--radius-base);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  transition: all var(--duration-fast) var(--ease-standard);
+  display: inline-block;
+}
+
+.cta-button.primary {
+  background: white;
+  color: var(--corporate-blue);
+}
+
+.cta-button.primary:hover {
+  transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-button.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+  background: var(--color-surface);
+  padding: var(--space-32) 60px;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-8);
+}
+
+.footer-date {
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-16);
+}
+
+/* NUEVOS ESTILOS PARA LA ESTRUCTURA ACTUALIZADA */
+.critical-event-table {
+  background: var(--color-surface);
+  padding: var(--space-24);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  margin-bottom: var(--space-24);
+}
+
+.event-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-20);
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background: var(--color-background);
+  padding: var(--space-24);
+  border-radius: var(--radius-base);
+  text-align: center;
+  min-width: 200px;
+  border-top: 4px solid var(--corporate-blue);
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.event-card.critical {
+  border-top-color: var(--corporate-red);
+}
+
+.event-card.impact {
+  border-top-color: var(--color-warning);
+}
+
+.event-value {
+  font-size: 32px;
+  font-weight: var(--font-weight-bold);
+  color: var(--corporate-blue);
+  margin-bottom: var(--space-8);
+}
+
+.event-card.critical .event-value {
+  color: var(--corporate-red);
+}
+
+.event-card.impact .event-value {
+  color: var(--color-warning);
+}
+
+.event-label {
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-8);
+  color: var(--color-text);
+}
+
+.event-description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.event-arrow {
+  font-size: 24px;
+  color: var(--color-text-secondary);
+  font-weight: bold;
+}
+
+.manager-risk-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.risk-point {
+  padding: var(--space-12);
+  background: rgba(220, 38, 38, 0.05);
+  border-radius: var(--radius-base);
+  border-left: 3px solid var(--corporate-red);
+  line-height: 1.5;
+}
+
+.section-number {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: var(--corporate-blue);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-weight: var(--font-weight-bold);
+  margin-right: var(--space-12);
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-24);
+}
+
+.problem-card {
+  background: var(--color-surface);
+  padding: var(--space-24);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.problem-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.problem-card.critical {
+  border-left: 4px solid var(--corporate-red);
+}
+
+.problem-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-12);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+}
+
+.problem-description {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.problem-example {
+  background: rgba(220, 38, 38, 0.05);
+  padding: var(--space-16);
+  border-radius: var(--radius-base);
+  margin-top: var(--space-16);
+  border-left: 3px solid var(--corporate-red);
+}
+
+.problem-example strong {
+  color: var(--corporate-red);
+}
+
+@media (max-width: 968px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+  
+  .content {
+    margin-left: 0;
+  }
+  
+  .section, .hero-section, .cta-section {
+    padding: 40px 24px;
+  }
+  
+  .metrics-grid, .consequences-grid, .problem-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-title {
+    font-size: 32px;
+  }
+  
+  .event-grid {
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+  
+  .event-arrow {
+    transform: rotate(90deg);
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo">DF Servicios</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#introduccion" class="nav-link active">Introducción</a></li>
+                    <li class="nav-item"><a href="#diagnostico" class="nav-link">Diagnóstico</a></li>
+                    <li class="nav-item"><a href="#consecuencias" class="nav-link">Consecuencias</a></li>
+                    <li class="nav-item"><a href="#analisis" class="nav-link">Análisis Causas</a></li>
+                    <li class="nav-item"><a href="#propuesta" class="nav-link">Propuesta</a></li>
+                    <li class="nav-item"><a href="#accion" class="nav-link">Próximos Pasos</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section id="introduccion" class="hero-section">
+                <h1 class="hero-title">Esquema de Propuesta Estratégica</h1>
+                <p class="hero-subtitle">
+                    Presentación para Comité de Dirección DF Servicios - Diagnóstico estructurado sobre restricciones financieras que limitan la capacidad operativa y comprometen el cumplimiento del plan de reestructuración aprobado.
+                </p>
+                <a href="#diagnostico" class="hero-cta">Ver Diagnóstico Completo</a>
+            </section>
+
+            <section id="diagnostico" class="section">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="section-number">1</span> Diagnóstico de la Problemática</h2>
+                    <p class="section-subtitle">Problema de gobernanza financiera y desalineación estructural</p>
+                </div>
+
+                <div class="critical-event-table">
+                    <h3 class="chart-title">Evento Crítico: Avales Djelfa - Impacto Cuantificado</h3>
+                    <div class="event-grid">
+                        <div class="event-card critical">
+                            <div class="event-value">55 M€</div>
+                            <div class="event-label">Avales Djelfa Comprometidos</div>
+                            <div class="event-description">Sin consulta previa a área operativa</div>
+                        </div>
+                        <div class="event-arrow">→</div>
+                        <div class="event-card critical">
+                            <div class="event-value">0 €</div>
+                            <div class="event-label">Capacidad Residual 2026</div>
+                            <div class="event-description">Sin margen para operaciones regulares</div>
+                        </div>
+                        <div class="event-arrow">→</div>
+                        <div class="event-card impact">
+                            <div class="event-value">100%</div>
+                            <div class="event-label">Cartera 2026 Afectada</div>
+                            <div class="event-description">Imposibilidad de convertir en contratos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="problem-grid">
+                    <div class="problem-card critical">
+                        <h3 class="problem-title">El Problema de Gobernanza Financiera</h3>
+                        <p class="problem-description">
+                            Las decisiones financieras relativas a avales, garantías y asignación de crédito no están siendo consensuadas con la línea operativa de Servicios que debe ejecutarlas y que soporta las consecuencias directas.
+                        </p>
+                        <div class="problem-example">
+                            <strong>Ejemplo crítico - Proyecto Djelfa:</strong> La ejecución de avales de este proyecto consumió el 100% de la capacidad de avales para DF Servicios de 2026, impactando la cartera de clientes potenciales.
+                        </div>
+                    </div>
+                    
+                    <div class="problem-card">
+                        <h3 class="problem-title">Ausencia de Condiciones Operativas</h3>
+                        <p class="problem-description">
+                            El plan de reestructuración fue aprobado con objetivos específicos basados en premisas de disponibilidad de capacidad de avales y recursos de estructura, pero estas condiciones no se han materializado.
+                        </p>
+                        <p class="problem-description">
+                            <strong>Realidad operativa:</strong> Capacidad de avales consumida y cartera limitada por restricciones de crédito.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="consecuencias" class="section">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="section-number">2</span> Consecuencias Proyectadas</h2>
+                    <p class="section-subtitle">Impactos críticos identificados para la organización</p>
+                </div>
+
+                <div class="consequences-grid">
+                    <div class="consequence-card critical">
+                        <div class="severity-badge critical">Crítico</div>
+                        <h3 class="consequence-title">Desequilibrio de Caja Operativa</h3>
+                        <p class="consequence-description">
+                            La línea de Servicios entraría en una trayectoria de pérdida operativa sostenida que no es ni sostenible ni compatible con los compromisos de reestructuración.
+                        </p>
+                    </div>
+                    
+                    <div class="consequence-card critical">
+                        <div class="severity-badge critical">Crítico</div>
+                        <h3 class="consequence-title">Imposibilidad de Cumplir Objetivos de Contratación</h3>
+                        <p class="consequence-description">
+                            Con capacidad de avales consumida, la mayor parte de la cartera prevista para 2026 no puede ser convertida en contratos, lo que hace materialmente imposible alcanzar los objetivos de contratación.
+                        </p>
+                    </div>
+                    
+                    <div class="consequence-card high">
+                        <div class="severity-badge high">Alto</div>
+                        <h3 class="consequence-title">Riesgo de Pérdida de Personal Crítico</h3>
+                        <p class="consequence-description">
+                            Personal operativo clave tiene alternativas laborales en el mercado. La ventana para retener personal clave es en el Q1 2026 si no se demuestran cambios sustanciales en las condiciones operativas.
+                        </p>
+                    </div>
+                    
+                    <div class="consequence-card critical">
+                        <div class="severity-badge critical">Crítico</div>
+                        <h3 class="consequence-title">Riesgo de Salida del Equipo Gestor</h3>
+                        <div class="manager-risk-content">
+                            <div class="risk-point">
+                                <strong>Sostenibilidad del modelo:</strong> Equipo asignado con responsabilidad de cumplir objetivos bajo premisas operativas no materializadas.
+                            </div>
+                            <div class="risk-point">
+                                <strong>Señales de insostenibilidad:</strong> Restricciones no consensuadas limitan autonomía operativa.
+                            </div>
+                            <div class="risk-point">
+                                <strong>Implicación para La Compañía:</strong> Vacío en línea de servicios que requeriría búsqueda externa y retrasos en ejecución.
+                            </div>
+                            <div class="risk-point">
+                                <strong>Posición del equipo:</strong> No es una amenaza, sino declaración de hechos sobre sostenibilidad del modelo actual.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="analisis" class="section">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="section-number">3</span> Marco de Análisis: ¿Por Qué Sucede Esto?</h2>
+                    <p class="section-subtitle">Análisis de causas raíz identificadas</p>
+                </div>
+
+                <div class="causes-list">
+                    <div class="cause-item">
+                        <div class="cause-letter">A</div>
+                        <div class="cause-content">
+                            <h3 class="cause-title">Ausencia de procesos de consulta interáreas en decisiones financieras de impacto operativo</h3>
+                            <p class="cause-description">
+                                Las decisiones sobre crédito y avales se toman sin tener en cuenta las necesidades operativas del área de Servicios. No existe un proceso que requiera consulta con la parte operativa sobre el impacto en cartera comercial y capacidad de ejecución.
+                            </p>
+                            <p class="problem-description">
+                                <strong>Resultado:</strong> Decisiones con desequilibrios hacia Servicios que generan restricciones operativas no anticipadas.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="cause-item">
+                        <div class="cause-letter">B</div>
+                        <div class="cause-content">
+                            <h3 class="cause-title">Separación entre planificación estratégica y asignación de recursos</h3>
+                            <p class="cause-description">
+                                El plan de reestructuración fue aprobado con objetivos específicos, pero los recursos financieros no fueron formalmente vinculados a esos objetivos.
+                            </p>
+                            <p class="problem-description">
+                                <strong>Resultado:</strong> Objetivos sin garantías explícitas sobre las condiciones necesarias para su cumplimiento.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="cause-item">
+                        <div class="cause-letter">C</div>
+                        <div class="cause-content">
+                            <h3 class="cause-title">Ausencia de mecanismos de escalamiento cuando restricciones limitan viabilidad</h3>
+                            <p class="cause-description">
+                                No existe un proceso claro para que la línea operativa señale cuando las restricciones hacen inalcanzables los objetivos pactados.
+                            </p>
+                            <p class="problem-description">
+                                <strong>Resultado:</strong> Señales de crisis llegan tarde, cuando ya hay daño operativo significativo.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="cause-item">
+                        <div class="cause-letter">D</div>
+                        <div class="cause-content">
+                            <h3 class="cause-title">Planes de ejecución desalineados con realidades operativas</h3>
+                            <p class="cause-description">
+                                Los planes del equipo gestor están vinculados a objetivos que se vuelven inalcanzables por restricciones externas, generando frustración y salida de talento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="propuesta" class="section">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="section-number">4</span> Propuesta Concreta: Soluciones y Acciones</h2>
+                    <p class="section-subtitle">Establecer modelo de gobernanza colaborativa para decisiones financieras</p>
+                </div>
+
+                <div class="chart-container">
+                    <h3 class="chart-title">Timeline Estratégico: Acciones y Plazos</h3>
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/5b8a8fa25ee9237887224d5a3a029713/1fed578c-a39b-466f-bcc6-24aa465d9fe2/fbbe867d.png" alt="Timeline Estratégico" class="chart-image">
+                </div>
+
+                <div class="recommendations-section">
+                    <div class="timeline-group">
+                        <div class="timeline-header">
+                            <span class="timeline-badge immediate">Inmediato</span>
+                            <h3 class="timeline-title">Recomendaciones Inmediatas (Q4 2025)</h3>
+                        </div>
+                        
+                        <div class="recommendation-item">
+                            <div class="recommendation-header">
+                                <span class="recommendation-number">1</span>
+                                <div>
+                                    <h4 class="recommendation-title">Revisión y Restitución de Capacidad de Avales para 2026</h4>
+                                    <span class="recommendation-timeline">Q4 2025</span>
+                                </div>
+                            </div>
+                            <p class="recommendation-description">
+                                Realizar una evaluación urgente del impacto real de la decisión Djelfa en la cartera de clientes potenciales en desarrollo. En base a esa evaluación, determinar opciones para restituir o ampliar capacidad de avales antes de fin de 2025.
+                            </p>
+                        </div>
+                        
+                        <div class="recommendation-item">
+                            <div class="recommendation-header">
+                                <span class="recommendation-number">2</span>
+                                <div>
+                                    <h4 class="recommendation-title">Establecimiento de Comité de Coordinación Financiero-Operativo</h4>
+                                    <span class="recommendation-timeline">Q4 2025</span>
+                                </div>
+                            </div>
+                            <p class="recommendation-description">
+                                Crear un mecanismo de consulta formal donde decisiones financieras que impacten operaciones (créditos, avales, garantías) sean presentadas y discutidas con la línea de Servicios ANTES de su aprobación.
+                            </p>
+                        </div>
+                        
+                        <div class="recommendation-item">
+                            <div class="recommendation-header">
+                                <span class="recommendation-number">3</span>
+                                <div>
+                                    <h4 class="recommendation-title">Comunicación Formal de Restricciones Conocidas</h4>
+                                    <span class="recommendation-timeline">Q4 2025</span>
+                                </div>
+                            </div>
+                            <p class="recommendation-description">
+                                Comunicación formal (escrita) del estado actual de capacidad de avales y cualquier otra restricción financiera conocida que impacte operaciones. Esto permite a la línea de Servicios reajustar su cartera comercial con información clara.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-group">
+                        <div class="timeline-header">
+                            <span class="timeline-badge medium">Mediano Plazo</span>
+                            <h3 class="timeline-title">Recomendaciones 30-90 días</h3>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="recommendation-header">
+                                <span class="recommendation-number">4</span>
+                                <div>
+                                    <h4 class="recommendation-title">Revisión de Objetivos Actuales y Re-baseline</h4>
+                                    <span class="recommendation-timeline">30-90 días</span>
+                                </div>
+                            </div>
+                            <p class="recommendation-description">
+                                Realizar una evaluación oficial de si los objetivos actuales de la línea de Servicios son realistas bajo las restricciones financieras identificadas. Si no lo son, proponer un re-baseline consensuado de objetivos para 2026.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-group">
+                        <div class="timeline-header">
+                            <span class="timeline-badge long">Largo Plazo</span>
+                            <h3 class="timeline-title">Recomendaciones Estructurales 90+ días</h3>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="recommendation-header">
+                                <span class="recommendation-number">5</span>
+                                <div>
+                                    <h4 class="recommendation-title">Rediseño del Modelo de Gobernanza Financiero-Operativa</h4>
+                                    <span class="recommendation-timeline">90+ días</span>
+                                </div>
+                            </div>
+                            <p class="recommendation-description">
+                                Realizar una revisión estructural de cómo se toman decisiones financieras en la empresa y cómo se conectan con objetivos operativos. Este es un proyecto de transformación de gobernanza corporativa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="accion" class="cta-section">
+                <h2 class="cta-title">Próximos Pasos y Decisiones Requeridas</h2>
+                <p class="cta-description">
+                    El Comité de Dirección debe pronunciarse sobre las acciones inmediatas propuestas, particularmente la revisión de capacidad de avales para 2026 y el establecimiento de mecanismos formales de coordinación financiero-operativa.
+                </p>
+                <div class="cta-actions">
+                    <a href="#diagnostico" class="cta-button primary">Revisar Diagnóstico Completo</a>
+                    <a href="#propuesta" class="cta-button secondary">Ver Recomendaciones Detalladas</a>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <h3 class="footer-title">Esquema de Propuesta Estratégica</h3>
+                    <p class="footer-date">Presentación para Comité de Dirección DF Servicios | Noviembre 2025</p>
+                    <p class="footer-date">© 2025 DF Servicios. Documento confidencial para uso interno.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // Smooth scroll navigation with active state
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section, .hero-section, .cta-section');
+            
+            // Update active nav on scroll
+            function updateActiveNav() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.pageYOffset >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', updateActiveNav);
+            
+            // Smooth scroll on click
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Hover effects for cards
+            const cards = document.querySelectorAll('.consequence-card, .cause-item, .metric-card, .event-card, .problem-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transition = 'all 0.3s ease';
+                });
+            });
+            
+            // Initialize with correct active state
+            updateActiveNav();
+        });
+    </script>
+</body>
+</html>
